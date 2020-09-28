@@ -77,7 +77,9 @@ export class Fabrika {
       fetch("/api/pekara", { method: "post", body: form })
         .then((x) => x.json())
         .then((x) => {
-          const silos = this.silosi.filter((silos) => silos.id == this.comboBox.value).pop();
+          const silos = this.silosi
+            .filter((silos) => silos.id == this.comboBox.value)
+            .pop();
           silos.trenKolicina = x.trenKolicina;
           silos.render();
         });
