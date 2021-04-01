@@ -70,24 +70,24 @@ namespace VideoKlub
 
             var k1 = new VideoKlubModels.VideoKlub
             {
-                Name = "kurac",
+                Name = "Video klub 1",
             };
 
             var k2 = new VideoKlubModels.VideoKlub
             {
-                Name = "kurac2",
+                Name = "Video klub 2",
             };
 
             context.VideoKlubs.Add(k1);
             context.VideoKlubs.Add(k2);
 
-            context.Policas.Add(new Polica { Name = "pizdarija", MaxDVD = 5, TrenutnoDVD = 0, VideoKlub = k1 });
-            context.Policas.Add(new Polica { Name = "pickarija", MaxDVD = 6, TrenutnoDVD = 1, VideoKlub = k1 });
-            context.Policas.Add(new Polica { Name = "mamojebarija", MaxDVD = 16, TrenutnoDVD = 16, VideoKlub = k1 });
+            context.Policas.Add(new Polica { Name = "K1 Polica 11", MaxDVD = 5, TrenutnoDVD = 0, VideoKlub = k1 });
+            context.Policas.Add(new Polica { Name = "K1 Polica 12", MaxDVD = 6, TrenutnoDVD = 1, VideoKlub = k1 });
+            context.Policas.Add(new Polica { Name = "K1 Polica 13", MaxDVD = 16, TrenutnoDVD = 16, VideoKlub = k1 });
 
-            context.Policas.Add(new Polica { Name = "pizdarija2", MaxDVD = 5, TrenutnoDVD = 0, VideoKlub = k2 });
-            context.Policas.Add(new Polica { Name = "pickarija2", MaxDVD = 6, TrenutnoDVD = 1, VideoKlub = k2 });
-            context.Policas.Add(new Polica { Name = "mamojebarija2", MaxDVD = 16, TrenutnoDVD = 16, VideoKlub = k2 });
+            context.Policas.Add(new Polica { Name = "K2 Polica 21", MaxDVD = 5, TrenutnoDVD = 0, VideoKlub = k2 });
+            context.Policas.Add(new Polica { Name = "K2 Polica 22", MaxDVD = 6, TrenutnoDVD = 1, VideoKlub = k2 });
+            context.Policas.Add(new Polica { Name = "K2 Polica 23", MaxDVD = 16, TrenutnoDVD = 16, VideoKlub = k2 });
 
             context.SaveChanges();
 
